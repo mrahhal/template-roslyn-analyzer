@@ -11,50 +11,21 @@ namespace TemplateRoslynAnalyzer;
 [Shared]
 public class AvoidSomethingCodeFixProvider : CodeFixProvider
 {
-	private const string Title = "Avoid something";
-
 	public override ImmutableArray<string> FixableDiagnosticIds => ImmutableArray.Create(
 		DiagnosticDescriptors.T1000_AvoidSomething.Id);
 
 	public sealed override FixAllProvider GetFixAllProvider() => WellKnownFixAllProviders.BatchFixer;
 
-	public sealed override async Task RegisterCodeFixesAsync(CodeFixContext context)
+	public sealed override Task RegisterCodeFixesAsync(CodeFixContext context)
 	{
-		var root = await context.Document.GetSyntaxRootAsync(context.CancellationToken).ConfigureAwait(false);
-		if (root == null) return;
+		return Task.CompletedTask;
 
-		foreach (var diagnostic in context.Diagnostics)
-		{
-			var span = diagnostic.Location.SourceSpan;
-			var trivia = root.FindTrivia(span.Start);
-
-			var title = Title;
-			context.RegisterCodeFix(
-				CodeAction.Create(
-					title,
-					ct => RemoveWhitespaceAsync(context.Document, root, trivia, ct),
-					equivalenceKey: title),
-				context.Diagnostics);
-		}
-	}
-
-	private Task<Document> RemoveWhitespaceAsync(Document document, SyntaxNode root, SyntaxTrivia trivia, CancellationToken cancellationToken)
-	{
-		var oldToken = trivia.Token;
-		var newToken = default(SyntaxToken);
-
-		if (trivia.IsKind(SyntaxKind.WhitespaceTrivia))
-		{
-			newToken = oldToken.WithTrailingTrivia(EndOfLineHelper.EndOfLine);
-		}
-		else if (trivia.IsKind(SyntaxKind.SingleLineCommentTrivia))
-		{
-			newToken = oldToken.ReplaceTrivia(trivia, SyntaxFactory.Comment(trivia.ToString().TrimEnd()));
-		}
-
-		var newRoot = root.ReplaceToken(oldToken, newToken);
-		var newDocument = document.WithSyntaxRoot(newRoot);
-
-		return Task.FromResult(newDocument);
+		//var title = "Avoid something";
+		//context.RegisterCodeFix(
+		//	CodeAction.Create(
+		//		title,
+		//		ct => RemoveSomething(context.Document, root, trivia, ct),
+		//		equivalenceKey: title),
+		//	context.Diagnostics);
 	}
 }
