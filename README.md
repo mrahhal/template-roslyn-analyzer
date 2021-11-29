@@ -18,6 +18,11 @@ A template for a Roslyn analyzer.
 - Rename the "TemplateRoslynAnalyzer" namespace.
 - Uncomment sections in this README.
 
+## Using this template
+
+- https://github.com/mrahhal/MR.Analyzers.Whitespace
+- https://github.com/mrahhal/MR.Analyzers.Records
+
 <!--
 ## Include in your project
 
