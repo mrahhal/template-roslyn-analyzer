@@ -1,0 +1,10 @@
+[Oo]bj/
+[Bb]in/
+artifacts/
+.vs/
+*.user
+*.suo
+*.cache
+*.vsp
+*.userprefs
+*.*sdf

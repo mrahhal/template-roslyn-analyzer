@@ -1,0 +1,13 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <Product>template-roslyn-analyzer</Product>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <RepositoryUrl>https://github.com/mrahhal/template-roslyn-analyzer</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Authors>Mohammad Rahhal</Authors>
+    <PackageProjectUrl>https://github.com/mrahhal/template-roslyn-analyzer</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>
