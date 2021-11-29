@@ -17,6 +17,7 @@ A template for a Roslyn analyzer.
 - Replace "template-roslyn-analyzer" in file and file names with your repo name.
 - Rename the "TemplateRoslynAnalyzer" namespace.
 - Uncomment sections in this README.
+- Update LICENSE.txt.
 
 ## Using this template
 
