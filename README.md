@@ -20,7 +20,7 @@ A template for a Roslyn analyzer.
 - Replace "Mohammad Rahhal"
 - Uncomment sections in this README
 
-## Using this template
+## Used by
 
 - https://github.com/mrahhal/MR.Analyzers.Whitespace
 - https://github.com/mrahhal/MR.Analyzers.Records
