@@ -16,9 +16,9 @@ A template for a Roslyn analyzer.
 
 - Replace "template-roslyn-analyzer" in file and file names with your repo name
 - Rename the "TemplateRoslynAnalyzer" namespace
-- Uncomment sections in this README
 - Update LICENSE.txt
 - Replace "Mohammad Rahhal"
+- Uncomment sections in this README
 
 ## Using this template
 
