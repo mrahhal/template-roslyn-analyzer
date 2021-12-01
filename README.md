@@ -14,10 +14,11 @@ A template for a Roslyn analyzer.
 
 ## Checklist
 
-- Replace "template-roslyn-analyzer" in file and file names with your repo name.
-- Rename the "TemplateRoslynAnalyzer" namespace.
-- Uncomment sections in this README.
-- Update LICENSE.txt.
+- Replace "template-roslyn-analyzer" in file and file names with your repo name
+- Rename the "TemplateRoslynAnalyzer" namespace
+- Uncomment sections in this README
+- Update LICENSE.txt
+- Replace "Mohammad Rahhal"
 
 ## Using this template
 
