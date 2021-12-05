@@ -14,6 +14,14 @@ A template for a Roslyn analyzer.
 
 ## Checklist
 
+You can use the prepare.ps1 script to bulk rename/replace "template-roslyn-analyzer" to the repo folder name:
+
+```
+./prepare
+```
+
+Manual checklist:
+
 - Replace "template-roslyn-analyzer" in file and file names with your repo name
 - Rename the "TemplateRoslynAnalyzer" namespace
 - Update LICENSE.txt
