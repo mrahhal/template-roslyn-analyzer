@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/mrahhal/template-roslyn-analyzer/actions/workflows/ci.yml/badge.svg)](https://github.com/mrahhal/template-roslyn-analyzer/actions/workflows/ci.yml)
 [![NuGet version](https://badge.fury.io/nu/template-roslyn-analyzer.svg)](https://www.nuget.org/packages/template-roslyn-analyzer)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
 
 A template for a Roslyn analyzer.
 
