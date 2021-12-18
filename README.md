@@ -10,7 +10,7 @@ A template for a Roslyn analyzer.
 
 - .NET 6 + C# 10 + NRT (nullable reference types) + ImplicitUsings
 - VSIX for debugging analyzer
-- GitHub CI action to build and test
+- GitHub CI action to build, test, and release
 
 ## Checklist
 
