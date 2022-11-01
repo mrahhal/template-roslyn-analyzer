@@ -9,11 +9,14 @@ public static class DiagnosticDescriptors
 		public const string Trivia = nameof(Trivia);
 	}
 
-	public static readonly DiagnosticDescriptor T1000_AvoidSomething = new(
+	// https://github.com/dotnet/roslyn-analyzers/issues/5828
+#pragma warning disable IDE0090 // Use 'new(...)'
+	public static readonly DiagnosticDescriptor T1000_AvoidSomething = new DiagnosticDescriptor(
 		"T1000",
 		"Avoid something",
 		"Avoid something",
 		Categories.Trivia,
 		DiagnosticSeverity.Error,
 		isEnabledByDefault: true);
+#pragma warning restore IDE0090 // Use 'new(...)'
 }
