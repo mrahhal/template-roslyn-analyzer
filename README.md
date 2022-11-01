@@ -29,7 +29,7 @@ Manual checklist:
 - Update LICENSE.txt
 - Replace "Mohammad Rahhal"
 - Uncomment sections in this README
-- Add NUGET_ORG_API_KEY GitHub secret for CI
+- Add `NUGET_TOKEN` GitHub secret for CI (can be created from [here](https://www.nuget.org/account/apikeys))
 
 ## Used by
 
