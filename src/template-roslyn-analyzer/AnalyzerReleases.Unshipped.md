@@ -3,6 +3,6 @@
 
 ### New Rules
 
-Rule ID | Category | Severity | Notes
---------|----------|----------|-------
-T1000 | Trivia | Error | DiagnosticDescriptors
+| Rule ID | Category | Severity | Notes                 |
+| ------- | -------- | -------- | --------------------- |
+| T1000   | Trivia   | Error    | DiagnosticDescriptors |
