@@ -40,7 +40,7 @@ Manual checklist:
 ## Include in your project
 
 ```xml
-<PackageReference Include="template-roslyn-analyzer" Version="1.0.0" PrivateAssets="All" />
+<PackageReference Include="template-roslyn-analyzer" Version="{version}" PrivateAssets="All" ExcludeAssets="compile" />
 ```
 -->
 

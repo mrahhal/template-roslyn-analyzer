@@ -11,6 +11,17 @@
 
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <DevelopmentDependency>true</DevelopmentDependency>
   </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="AnalyzerReleases.Shipped.md" Condition="Exists('AnalyzerReleases.Shipped.md')" />
+    <AdditionalFiles Include="AnalyzerReleases.Unshipped.md" Condition="Exists('AnalyzerReleases.Unshipped.md')" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" PrivateAssets="all" ExcludeAssets="compile" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.3.1" />
+  </ItemGroup>
 
 </Project>
