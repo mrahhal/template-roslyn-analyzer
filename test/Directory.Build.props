@@ -5,6 +5,8 @@
   <PropertyGroup>
     <IsPackable>false</IsPackable>
     <Nullable>disable</Nullable>
+
+    <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
 
   <ItemGroup>
