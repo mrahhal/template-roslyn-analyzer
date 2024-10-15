@@ -3,6 +3,8 @@
   <PropertyGroup>
     <Description>template-roslyn-analyzer description.</Description>
     <PackageTags>roslyn;analyzer;codefixer</PackageTags>
+
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
   </PropertyGroup>
 
   <ItemGroup>
