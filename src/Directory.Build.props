@@ -22,8 +22,7 @@
 
   <ItemGroup>
     <!-- TODO: Update versions and split package because of https://github.com/mrahhal/template-roslyn-analyzer/issues/1 -->
-    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" PrivateAssets="all" ExcludeAssets="compile" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.3.1" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.3.1" PrivateAssets="all" />
   </ItemGroup>
 
 </Project>
